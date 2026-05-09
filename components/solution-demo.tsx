@@ -21,7 +21,7 @@ const highlights = [
 ]
 
 export function SolutionDemo() {
-  const demoUrl = process.env.NEXT_PUBLIC_DEMO_URL
+  const demoUrl = process.env.NEXT_PUBLIC_DEMO_URL ?? 'https://ecomap-demo.zeabur.app/'
 
   return (
     <Section id="demo" className="bg-cream-50">
