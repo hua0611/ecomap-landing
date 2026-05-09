@@ -1,0 +1,8 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circular arrow representing recycling/cycle -->
+  <circle cx="14" cy="14" r="11" stroke="#1F3D2E" stroke-width="2" fill="none"/>
+  <!-- Leaf shape in center -->
+  <path d="M14 8 C14 8 19 11 19 16 C19 19 16.5 20 14 20 C14 20 9 17 9 12 C9 9.5 11.5 8 14 8 Z" fill="#6B8E6F"/>
+  <!-- Arrow tip on circle -->
+  <path d="M22 10 L24 14 L20 13" fill="#1F3D2E"/>
+</svg>

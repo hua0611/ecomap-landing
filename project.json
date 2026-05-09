@@ -1,0 +1,50 @@
+{
+  "name": "cycmap-landing",
+  "title": "EcoMap Landing Page",
+  "description": "黑客松產品 EcoMap（循環容器經濟成果儀表板）的單頁式 landing page，含 demo iframe 嵌入與 email 候補名單收集",
+  "status": "completed",
+  "created_at": "2026-05-09",
+  "updated_at": "2026-05-09",
+  "latest_task": "T11: Hero V2 4-slide carousel + EmailBar",
+  "category": "landing-page",
+  "tech_stack": {
+    "framework": "Next.js 16.2.6",
+    "language": "TypeScript (strict)",
+    "styling": "Tailwind CSS 4 (@theme syntax)",
+    "fonts": "Noto Serif TC + Noto Sans TC (next/font/google)",
+    "deployment": "Vercel or Zeabur",
+    "email_storage": "Google Sheets via Apps Script Webhook",
+    "validation": "Zod 4.4.3"
+  },
+  "tasks_completed": [
+    "T01: Next.js 16 專案初始化（含 Tailwind 4 + TS）",
+    "T02: 色票 token 與字體設定（@theme 語法）",
+    "T03: 共用元件（Nav / EmailForm / Footer / Container / Section）",
+    "T04: Hero section（主標語 + email CTA）",
+    "T05: Problem section（震撼數字三卡片）",
+    "T06: Solution + Demo iframe section（含 fallback）",
+    "T07: Feature Cards + Final CTA section",
+    "T08: /api/subscribe API route + Google Sheet webhook 整合（fail-soft）",
+    "T09: README + Apps Script 設定指南（5 步驟 + GAS 程式碼）+ 部署指南",
+    "T10: QA 自我稽核（build ✓ lint ✓ API 測試 ✓）",
+    "T11: Hero V2 4-slide carousel + EmailBar（framer-motion + 滑鼠光暈 + 逐字進場）"
+  ],
+  "tasks_pending": [],
+  "preference_overrides": {
+    "language": "zh-TW",
+    "ui_style": "editorial / 深綠米白 / 政策報告風"
+  },
+  "constraints": [
+    "Footer 不顯示隊伍名與黑客松名（使用者要求乾淨）",
+    "Demo URL 用 env var 控制，預設顯示 fallback 區塊",
+    "Email 必須先寫進 Google Sheet 才算成功（不寫資料庫）",
+    "支援手機（iframe overflow-x-auto + 響應式排版）"
+  ],
+  "build_status": {
+    "npm_run_build": "pass",
+    "npm_run_lint": "pass",
+    "api_test_valid_email": "200 ok:true",
+    "api_test_invalid_email": "400 invalid_email",
+    "api_test_no_webhook": "200 ok:true (fail-soft)"
+  }
+}
